@@ -16,7 +16,10 @@
   <default revision="refs/heads/lineage-19.0"
            remote="github"
            sync-c="true"
-           sync-j="4" />
+           sync-j="8" />
+  
+  <remote  name="mroles29"
+           fetch="https://github.com/mroles29/"
 
   <superproject name="platform/superproject" remote="aosp" revision="android-12.0.0_r27" />
   <contactinfo bugurl="go/repo-bug" />
@@ -1048,6 +1051,11 @@
   <project path="tools/treble" name="platform/tools/treble" groups="tools,pdk" remote="aosp" />
   <project path="tools/trebuchet" name="platform/tools/trebuchet" groups="tools,cts,pdk,pdk-cw-fs,pdk-fs" remote="aosp" />
 
+  
+  <!-- My Coral -->
+  <project path="vendor/google" name="vendor_google_coral" remote="mroles29" />
+  
+  
   <include name="snippets/lineage.xml" />
 
   <repo-hooks in-project="platform/tools/repohooks" enabled-list="pre-upload" />
